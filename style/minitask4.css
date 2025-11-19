@@ -1,0 +1,70 @@
+:root {
+  --bg-primary: lightblue;
+  --bg-warning: yellow;
+  --bg-danger: red;
+  --bg-success: green;
+  --bg-info: blue;
+  --bg-secondary: indigo;
+}
+
+button.btn[data-role="primary"] {
+  border: 2px solid black;
+  background-color: var(--bg-primary);
+}
+
+button.btn[data-role="danger"] {
+  background-color: var(--bg-danger);
+}
+
+button.btn[data-role="danger"] {
+  background-color: var(--bg-danger);
+}
+
+form > button[data-role="secondary"] {
+  background-color: var(--bg-secondary);
+  color: white;
+}
+
+input[type="email"] {
+  border: 2px solid var(--bg-danger);
+}
+
+article.card[data-status="success"] {
+  background-color: var(--bg-success);
+}
+
+article.card[data-status="warning"] {
+  background-color: var(--bg-warning);
+}
+
+article.card[data-status="error"] {
+  /* background-color: var(--bg-danger); */
+  color: var(--bg-danger);
+}
+
+article > button[data-role="secondary"] {
+  background-color: var(--bg-secondary);
+  color: white;
+}
+tbody > :nth-child(1),
+tbody > :nth-child(3) {
+  background-color: var(--bg-primary);
+}
+
+tbody > :nth-child(2) {
+  background-color: var(--bg-secondary);
+}
+
+article > h2 + p::first-letter {
+  font-size: 30px;
+}
+
+.btn {
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+section > ul > li:nth-child(3) {
+  background-color: var(--bg-primary);
+}
